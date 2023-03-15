@@ -1,0 +1,301 @@
+:root {
+  --body-text: #434455;
+  --title-text: #2e2f42;
+  --brand-color: #4d5ae5;
+  --focus-color: #404bbf;
+  --white: #ffffff;
+  --background: #f4f4fd;
+  --footer-text: #e7e9fc;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--body-text);
+  letter-spacing: 0.02em;
+  background-color: var(--white);
+}
+
+/* ========== COMPONENTS ========== */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+  margin-right: 76px;
+}
+.logo > span {
+  color: var(--title-text);
+}
+.footer span {
+  color: var(--background);
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--title-text);
+}
+.subtitle {
+  font-weight: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text);
+}
+.description-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--body-text);
+}
+
+.conteiner {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.illustration .section-title,
+.team .section-title {
+  margin-bottom: 72px;
+}
+
+.team-text > .subtitle,
+.projects-text > .subtitle,
+.strategy-item > .subtitle {
+  margin-bottom: 8px;
+}
+
+/* ========== /COMPONENTS ========== */
+/* ========== NAVIGATION ========== */
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--footer-text);
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.menu-link {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-text);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--focus-color);
+}
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+.contact-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: var(--body-text);
+}
+.contact-info:hover,
+.contact-info:focus {
+  color: var(--focus-color);
+}
+.header-conteiner {
+  display: flex;
+}
+
+/* ========== /NAVIGATION ========== */
+/* ========== Hero section ========== */
+.hero {
+  background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  background-color: var(--title-text);
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.modal-btn {
+  border-radius: 4px;
+  border: 0;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  display: block;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--focus-color);
+}
+
+/* ========== /Hero section ========== */
+/* ========== Section 1. What are we doing. Text ========== */
+.strategy {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.strategy-list,
+.illustration-list,
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* ========== /Section 1. What are we doing. Text ========== */
+/* ========== Section 2. What are we doing. Image ========== */
+.illustration {
+  padding-bottom: 120px;
+}
+
+/* ========== /Section 2. What are we doing. Image ========== */
+/* ========== Section 3. Team ========== */
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--background);
+}
+
+/* ========== /Section 3. Team ========== */
+.team-item {
+  width: calc((100% - 72px) / 4);
+  background: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-text {
+  padding: 32px 16px;
+  text-align: center;
+}
+/* ========== Footer ========== */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: var(--title-text);
+}
+.footer-text {
+  max-width: 264px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--footer-text);
+}
+.footer .logo {
+  margin-bottom: 16px;
+}
+/* ========== /Footer ========== */
+/* --------------------------------------------- portfolio */
+.filter-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--brand-color);
+  background: var(--background);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--white);
+  background: var(--focus-color);
+}
+
+.examples {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.projects-item {
+  width: calc((100% - 48px) / 3);
+}
+.projects-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid var(--footer-text);
+  border-bottom: 1px solid var(--footer-text);
+  border-left: 1px solid var(--footer-text);
+}
