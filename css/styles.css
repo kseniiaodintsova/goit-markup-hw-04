@@ -130,15 +130,7 @@ body {
 .menu-link:focus {
   color: var(--focus-color);
 }
-.menu-link:hover::after,
-.menu-link:focus::after {
-  content: ' ';
-  height: 4px;
-  background: #404bbf;
-  border-radius: 2px;
-  display: block;
-  margin-top: 24px;
-}
+
 .menu {
   display: flex;
   gap: 40px;
